@@ -1,0 +1,33 @@
+# Arquivos temporários e pastas geradas pelo IDE
+.DS_Store
+.project
+.settings/
+*.iml
+*.class
+*.jar
+*.war
+bin/
+gen/
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Arquivos de construção e distribuição do SAPUI5
+/resources/*
+/test-resources/*
+
+# Arquivos de configuração de projeto específicos do IDE (ajuste conforme necessário)
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
+.project
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Dependendo do gerenciador de pacotes usado
+/yarn-error.log
+/package-lock.json

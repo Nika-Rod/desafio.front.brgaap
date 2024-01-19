@@ -1,0 +1,63 @@
+<mvc:View
+   controllerName="ui5.walkthrough.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:webc="sap.ui.webc.main"
+   xmlns:layout="sap.ui.layout"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   height="90%">
+
+   <App showScroll="false">
+      <Page showHeader="false">
+         <content>
+            <VBox class="sapUiSmallMargin">
+               <SearchField width="100%"/>
+               <html:hr style="border: 1px solid #ccc; margin: 10px 0;"/>
+            </VBox>
+            <VBox class="sapUiSmallMargin">
+               <Image src="images/logo.png"/>
+               <html:hr style="border: 1px solid #ccc; margin: 10px 0;"/>
+            </VBox>
+            <VBox class="sapUiSmallMargin">
+               <webc:Table
+               rows="{apiModel>/apiData}"
+               showSeparator="Inner">
+                  <webc:columns>
+                     <webc:TableColumn>
+                        <Label text="Nome"/>
+                     </webc:TableColumn>
+                     <webc:TableColumn>
+                        <Label text="Completado"/>
+                     </webc:TableColumn>
+                     <webc:TableColumn>
+                        <Label text="Detalhes"/>
+                     </webc:TableColumn>
+                  </webc:columns>
+                  <webc:rows>
+                     <webc:TableRow>
+                        <webc:cells>
+                           <webc:TableCell>
+                              <webc:content>
+                                 <Text text="{apiModel>title}"/>
+                              </webc:content>
+                           </webc:TableCell>
+                           <webc:TableCell>
+                              <webc:content>
+                                 <CheckBox />
+                              </webc:content>
+                           </webc:TableCell>
+                           <webc:TableCell>
+                              <webc:content>
+                                 <Button press=".onShowHello" icon="images/icon.svg" width="100%" border="1px solid #0064d9">          
+                                 </Button>
+                              </webc:content>
+                           </webc:TableCell>
+                        </webc:cells>   
+                     </webc:TableRow>
+                  </webc:rows>
+               </webc:Table>
+            </VBox>
+         </content>
+      </Page>
+   </App>
+</mvc:View>
