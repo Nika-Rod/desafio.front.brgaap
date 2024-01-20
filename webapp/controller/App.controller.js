@@ -22,6 +22,24 @@ sap.ui.define([
         .catch(error => {
             console.error('Erro ao obter dados da API:', error);
         });
+	   },
+
+	   onSearch: function(oEvent) {
+
+		var nameQuery = oEvent.getSource().getValue();
+		var oTable = this.getView().byId("tableId")
+
+		if (oTable) {
+        var aFilters = [];
+        
+        if (nameQuery && nameQuery.length > 0) {
+
+            var oFilter = new sap.ui.model.Filter("title", sap.ui.model.FilterOperator.Contains, nameQuery);
+            aFilters.push(oFilter);
+        }
+        oTable.getBinding("rows").filter(aFilters, sap.ui.model.FilterType.Application);
+    }
+		
 	   }
 	});
  });

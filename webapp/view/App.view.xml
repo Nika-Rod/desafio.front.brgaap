@@ -11,7 +11,7 @@
       <Page showHeader="false">
          <content>
             <VBox class="sapUiSmallMargin">
-               <SearchField width="100%"/>
+               <SearchField width="100%" liveChange=".onSearch"/>
                <html:hr style="border: 1px solid #ccc; margin: 10px 0;"/>
             </VBox>
             <VBox class="sapUiSmallMargin">
@@ -21,7 +21,8 @@
             <VBox class="sapUiSmallMargin">
                <webc:Table
                rows="{apiModel>/apiData}"
-               showSeparator="Inner">
+               showSeparator="Inner"
+               id="tableId">
                   <webc:columns>
                      <webc:TableColumn>
                         <Label text="Nome"/>
@@ -48,7 +49,7 @@
                            </webc:TableCell>
                            <webc:TableCell>
                               <webc:content>
-                                 <Button press=".onShowHello" icon="images/icon.svg" width="100%" border="1px solid #0064d9">          
+                                 <Button id="quickView" press=".onShowHello" ariaHasPopup="Dialog" icon="images/icon.svg" width="100%">          
                                  </Button>
                               </webc:content>
                            </webc:TableCell>
