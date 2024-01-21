@@ -33,7 +33,7 @@
                      </webc:TableColumn>
                   </webc:columns>
                   <webc:rows>
-                     <webc:TableRow>
+                     <webc:TableRow >
                         <webc:cells>
                            <webc:TableCell>
                               <webc:content>
@@ -47,7 +47,7 @@
                            </webc:TableCell>
                            <webc:TableCell>
                               <webc:content>
-                                 <Button id="quickViewButton" press=".onDialogWithSizePress" ariaHasPopup="Dialog" width="100%">          
+                                 <Button id="quickViewButton" icon="sap-icon://detail-view" press=".onDialogWithSizePress" ariaHasPopup="Dialog" width="100%">          
                                  </Button>
                               </webc:content>
                            </webc:TableCell>

@@ -50,7 +50,7 @@ sap.ui.define([
 					text: ""
 				}).addStyleClass("sapUiSmallMargin"),
 				contentWidth: "300px",
-				contentHeight: "100px",
+				contentHeight: "115px",
 				endButton: new Button({
 					text: "Fechar",
 					press: function () {
