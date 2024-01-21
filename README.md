@@ -24,10 +24,10 @@ git clone git@github.com:Nika-Rod/desafio.front.brgaap.git
 Certifique-se de ter o seguinte software instalado antes de prosseguir:
 
 • Node.js
-<br>
+
 • npm
 
-Para a inicialização do projeto, execute os seguintes comandos no terminal do projeto:
+Para a inicialização do projeto, dentro da pasta webapp execute os seguintes comandos no terminal:
 
 ```bash
 npm i -D @ui5/cli
