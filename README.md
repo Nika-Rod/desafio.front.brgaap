@@ -31,9 +31,7 @@ Dentro da pasta webapp execute os seguintes comandos no terminal:
 
 ```bash
 npm i -D @ui5/cli
-ui5 init
-ui5 use OpenUI5
-ui5 add sap.ui.core sap.m sap.ui.webc.main sap.ui.layout
+npm install
 ```
 
 Para inicializar o projeto, execute o comando:
