@@ -27,7 +27,7 @@ Certifique-se de ter o seguinte software instalado antes de prosseguir:
 
 • npm
 
-Para a inicialização do projeto, dentro da pasta webapp execute os seguintes comandos no terminal:
+Dentro da pasta webapp execute os seguintes comandos no terminal:
 
 ```bash
 npm i -D @ui5/cli
