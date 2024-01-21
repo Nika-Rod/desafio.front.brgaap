@@ -4,7 +4,8 @@
    xmlns:mvc="sap.ui.core.mvc"
    xmlns:webc="sap.ui.webc.main"
    xmlns:layout="sap.ui.layout"
-   xmlns:html="http://www.w3.org/1999/xhtml">
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   height="90%">
 
    <App>
       <Page showHeader="false">
