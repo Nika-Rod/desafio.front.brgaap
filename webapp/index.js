@@ -4,6 +4,6 @@ sap.ui.define([
 	"use strict";
 
 	XMLView.create({
-		viewName: "ui5.walkthrough.view.App"
+		viewName: "desafio.brgaap.view.App"
 	}).then((oView) => oView.placeAt("content"));
 });

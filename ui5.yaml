@@ -1,6 +1,6 @@
 specVersion: "3.2"
 metadata:
-  name: ui5.walkthrough
+  name: desafio.brgaap
 type: application
 framework:
   name: OpenUI5

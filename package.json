@@ -1,7 +1,7 @@
 {
-    "name": "ui5.walkthrough",
+    "name": "desafio.brgaap",
     "version": "1.0.0",
-    "description": "The UI5 walkthrough application",
+    "description": "Desafio Front End BRGAAP",
     "scripts": {
         "start": "ui5 serve -o index.html"
     },

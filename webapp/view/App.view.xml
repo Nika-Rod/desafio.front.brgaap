@@ -1,13 +1,12 @@
 <mvc:View
-   controllerName="ui5.walkthrough.controller.App"
+   controllerName="desafio.brgaap.controller.App"
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc"
    xmlns:webc="sap.ui.webc.main"
    xmlns:layout="sap.ui.layout"
-   xmlns:html="http://www.w3.org/1999/xhtml"
-   height="90%">
+   xmlns:html="http://www.w3.org/1999/xhtml">
 
-   <App showScroll="false">
+   <App>
       <Page showHeader="false">
          <content>
             <VBox class="sapUiSmallMargin">
@@ -21,7 +20,6 @@
             <VBox class="sapUiSmallMargin">
                <webc:Table
                rows="{apiModel>/apiData}"
-               showSeparator="Inner"
                id="tableId">
                   <webc:columns>
                      <webc:TableColumn>
@@ -44,12 +42,12 @@
                            </webc:TableCell>
                            <webc:TableCell>
                               <webc:content>
-                                 <CheckBox />
+                                 <CheckBox id="check" selected="{apiModel>completed}" press=".onCheckBoxPress"/>
                               </webc:content>
                            </webc:TableCell>
                            <webc:TableCell>
                               <webc:content>
-                                 <Button id="quickView" press=".onShowHello" ariaHasPopup="Dialog" icon="images/icon.svg" width="100%">          
+                                 <Button id="quickViewButton" press=".onDialogWithSizePress" ariaHasPopup="Dialog" width="100%">          
                                  </Button>
                               </webc:content>
                            </webc:TableCell>
